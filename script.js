@@ -133,7 +133,7 @@ const resume = {
             title: "CONTACT ME",
             content: `
             <div style="font-size: 1.2rem;">
-                <p>📧 <strong>Email:</strong> <a href="mailto:kk@email.com">your@email.com</a></p>
+                <p>📧 <strong>Email:</strong> <a href="mailto:kk@email.com">kk@email.com</a></p>
                 <p>📱 <strong>Phone:</strong> 514-876-3456</p>
             </div>
             `
