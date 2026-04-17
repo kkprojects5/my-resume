@@ -1,0 +1,290 @@
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #0f2a66,
+        #1c3faa,
+        #2f56d6
+    );
+
+    background-size: 300% 300%;
+    animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* main glass */
+
+.glass {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 18px;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(28, 63, 170, 0.25);
+}
+
+/* header area*/
+
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.header-text p {
+    margin: 4px 0;
+    opacity: 0.75;
+    font-size: 1rem;
+}
+
+/* contact button */
+
+.contact-btn {
+    padding: 10px 18px;
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #1c3faa, #4facfe);
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 0 18px rgba(79, 172, 254, 0.6);
+}
+
+/* icon grid */
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 18px;
+
+    margin: 35px 0;
+}
+
+.icon-card {
+    text-align: center;
+
+    padding: 22px 18px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    transition: all 0.25s ease;
+
+    backdrop-filter: blur(10px);
+}
+
+.icon-card i {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: #cfe3ff;
+}
+
+.icon-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.icon-card:hover {
+    transform: translateY(-6px) scale(1.04);
+
+    background: rgba(255, 255, 255, 0.12);
+
+    box-shadow: 0 0 18px rgba(79, 172, 254, 0.35);
+}
+
+/* content  */
+
+.content {
+    min-height: 320px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #eaf2ff;
+}
+
+/* text links */
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #7cc4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* gradient title*/
+
+.gradient-text {
+    background: linear-gradient(90deg, #7cc4ff, #4facfe, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.glow {
+    text-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+}
+
+/* typing effect */
+
+.typing {
+    border-right: 2px solid #4facfe;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #4facfe; }
+}
+
+/* small responsive */
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+/* section cards evaluation */
+
+.section-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+
+    transition: 0.25s ease;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.section-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(79,172,254,0.25);
+}
+
+/* role title inside cards */
+.role-title {
+    font-weight: 700;
+    color: #d7e9ff;
+    margin-bottom: 6px;
+}
+
+/* sub text */
+.role-sub {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* loading state */
+
+.loader {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* fade transition */
+
+.fade-in {
+    animation: fadeInSmooth 0.4s ease;
+}
+
+@keyframes fadeInSmooth {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* download button */
+
+.download-btn {
+    padding: 8px 14px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
