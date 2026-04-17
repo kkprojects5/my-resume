@@ -66,7 +66,7 @@ const resume = {
             content: `
             <div class="section-card">
                 <div class="role-title">Head of Translation Department</div>
-                <div class="role-sub">Astrakhan Chamber of Commerce and Industry | 2008 – 2017</div>
+                <div class="role-sub">Astrakhan Chamber of Commerce and Industry | 2008 – 2020</div>
 
                 <ul>
                     <li>Managed and supervised a team of translators and language specialists</li>
@@ -99,6 +99,9 @@ const resume = {
             content: `
             <strong>Vanier College, Montreal, QC</strong><br>
             Software Development: Secure Desktop, Mobile and Web Applications | 2025 – Present<br><br>
+
+            <strong>Dawson College, Montreal, QC</strong><br>
+            Independent Studies | 2023 – 2026<br><br>
 
             <strong>McGill University, Montreal, QC</strong><br>
             Communication | 2021 – 2023<br><br>
